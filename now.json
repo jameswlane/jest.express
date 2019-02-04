@@ -1,0 +1,17 @@
+{
+  "alias": [
+    "jest.express",
+    "www.jest.express"
+  ],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ],
+  "name": "jest.express",
+  "version": 2
+}
