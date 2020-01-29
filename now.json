@@ -1,17 +1,18 @@
 {
+  {
+  "version": 2,
   "alias": [
     "jest.express",
     "www.jest.express"
   ],
-  "builds": [
+  "name": "jest.express",
+  "routes": [
     {
-      "src": "package.json",
-      "use": "@now/static-build",
-      "config": {
-        "distDir": "public"
+      "src": "/",
+      "status": 301,
+      "headers": {
+        "Location": "https://github.com/jameswlane/jest-express"
       }
     }
-  ],
-  "name": "jest.express",
-  "version": 2
+  ]
 }
